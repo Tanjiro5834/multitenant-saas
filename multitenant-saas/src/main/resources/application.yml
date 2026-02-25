@@ -1,0 +1,23 @@
+spring.application.name=multitenant-saas
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/multitenant_saas
+    username: postgres
+    password: yourpassword
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+  flyway:
+    enabled: true
+
+server:
+  port: 8080
+
+jwt:
+  secret: your-super-secret-key-change-this
+  expiration: 3600000
