@@ -20,4 +20,6 @@ public interface ProjectRepository extends JpaRepository<Project, Long>{
             UUID id,
             Organization organization
     );
+
+    boolean findByName(String name);
 }
