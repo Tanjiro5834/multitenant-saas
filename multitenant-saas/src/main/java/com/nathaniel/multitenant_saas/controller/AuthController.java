@@ -12,7 +12,6 @@ import com.nathaniel.multitenant_saas.dto.auth.LoginRequest;
 import com.nathaniel.multitenant_saas.dto.auth.RegisterRequest;
 import com.nathaniel.multitenant_saas.entity.Organization;
 import com.nathaniel.multitenant_saas.service.OrganizationService;
-import com.nathaniel.multitenant_saas.entity.OrganizationStatus;
 
 public class AuthController {
     private final OrganizationService organizationService;
